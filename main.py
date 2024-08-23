@@ -3,7 +3,7 @@ from crewai.process import Process
 from textwrap import dedent
 from agents import TravelAgents
 from tasks import TravelTasks
-
+from tools.search_tools import SearchTools
 from dotenv import load_dotenv
 load_dotenv()
 
@@ -64,7 +64,7 @@ class TripCrew:
                 gather_city_info
             ],
             process=Process.sequential,
-            verbose=True,
+            verbose=False,
         )
 
         result = crew.kickoff()
@@ -73,6 +73,9 @@ class TripCrew:
 
 # This is the main function that you will use to run your custom crew.
 if __name__ == "__main__":
+    
+
+
     print("## Welcome to Trip Planner Crew")
     print('-------------------------------')
     origin = input(
@@ -102,3 +105,8 @@ if __name__ == "__main__":
     print("## Here is you Trip Plan")
     print("########################\n")
     print(result)
+
+    # Testing
+    # query = "Spain travel attractions"
+    # search_results = SearchTools.search(query)
+    # print(search_results)

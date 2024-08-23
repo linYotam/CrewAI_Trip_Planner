@@ -65,6 +65,7 @@ class TravelTasks:
             - Traveler Interests: {interests}
 
             **Note**: {self.__tip_section()}
+            **Note**: Exclude searches and results related to technical topics or unrelated queries like jquery - What does [object Object] mean? or [object, object] in JavaScript.
         """
             ),
             agent=agent,
@@ -108,6 +109,7 @@ class TravelTasks:
                     - Number of Days: {num_of_days}
 
                     **Note**: {self.__tip_section()}
+                    **Note**: Exclude searches and results related to technical topics or unrelated queries like jquery - What does [object Object] mean? or [object, object] in JavaScript.
         """
             ),
             agent=agent,
@@ -146,6 +148,7 @@ class TravelTasks:
                     - num_of_days: {num_of_days}
 
                     **Note**: {self.__tip_section()}
+                    **Note**: Exclude searches and results related to technical topics or unrelated queries like jquery - What does [object Object] mean? or [object, object] in JavaScript.
         """
             ),
             agent=agent,

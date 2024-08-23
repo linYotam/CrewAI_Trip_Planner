@@ -79,7 +79,9 @@ class TravelAgents:
                         include budget, packing suggestions, and safety tips.
                         """),
             tools=[
-                SearchTools.search_internet,
+                SearchTools.search,
+                SearchTools.get_contents,
+                SearchTools.find_similar,
                 CalculatorTools.calculate
             ],
             verbose=True,
@@ -93,7 +95,9 @@ class TravelAgents:
                 f"""Expert at analyzing travel data to pick ideal destinations"""),
             goal=dedent(
                 f"""Select the best cities based on weather, season, prices, and traveler interests"""),
-            tools=[SearchTools.search_internet],
+            tools=[SearchTools.search,
+                SearchTools.get_contents,
+                SearchTools.find_similar],
             verbose=True,
             llm=self.OpenAIGPT4,
         )
@@ -105,7 +109,9 @@ class TravelAgents:
         about the city, it's attractions and customs"""),
             goal=dedent(
                 f"""Provide the BEST insights about the selected city"""),
-            tools=[SearchTools.search_internet],
+            tools=[SearchTools.search,
+                SearchTools.get_contents,
+                SearchTools.find_similar],
             verbose=True,
             llm=self.OpenAIGPT4,
         )
