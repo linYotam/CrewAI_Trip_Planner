@@ -52,7 +52,7 @@ class TravelTasks:
         return Task(
             description=dedent(
                 f"""
-            **Task**: Develop a 7-Day Travel Itinerary
+            **Task**: Develop a {num_of_days}-Day Travel Itinerary
             **Description**: Expand the city guide into a full {num_of_days}-day travel itinerary with detailed 
                 per-day plans, including weather forecasts, places to eat, packing suggestions, 
                 and a budget breakdown. You MUST suggest actual places to visit, actual hotels to stay, 
