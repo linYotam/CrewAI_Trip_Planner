@@ -1,3 +1,5 @@
+<<<<<<< HEAD
+
 # Trip_Planner_Yotam
 
 CrewAI Trip Planner
