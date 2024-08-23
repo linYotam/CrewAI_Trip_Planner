@@ -1,4 +1,5 @@
 from crewai import Crew
+from crewai.process import Process
 from textwrap import dedent
 from agents import TravelAgents
 from tasks import TravelTasks
@@ -62,6 +63,7 @@ class TripCrew:
                 identify_city,
                 gather_city_info
             ],
+            process=Process.sequential,
             verbose=True,
         )
 

@@ -68,7 +68,7 @@ class TravelTasks:
         """
             ),
             agent=agent,
-            max_iterations=10,
+            max_iterations=3,
             expected_output=dedent(
                 f"""
                 **Expected Output**: 
@@ -111,7 +111,7 @@ class TravelTasks:
         """
             ),
             agent=agent,
-            max_iterations=10,
+            max_iterations=3,
             expected_output=dedent(
                 f"""
                 **Expected Output**:
@@ -149,7 +149,7 @@ class TravelTasks:
         """
             ),
             agent=agent,
-            max_iterations=10,
+            max_iterations=3,
             expected_output=dedent(
                 f"""
                 **Expected Output**: 
